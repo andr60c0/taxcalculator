@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Tax Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tax Calculator</h1>
+      <form id="taxCalculator">
+        <label for="monAmount">Monetary amount</label><br />
+        <input id="monAmount" name="monAmount" type="number" size="20" min="0" required tabindex="1" /><br />
+        <label for="taxPer">Tax percentage</label><br />
+        <input id="taxPer" name="taxPer" type="number" size="20" min="0" max="100" required tabindex="1" /><br />
+      </form>
+      <button onclick="start()">Calculate</button>
+      <div class="results">
+        <p class="tax_amount">Tax amount: 0</p>
+        <p class="final_amount">Final amount: 0</p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
